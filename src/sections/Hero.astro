@@ -1,0 +1,42 @@
+---
+import ContentWidth from "../components/ContentWidth.astro";
+import FormContact from "../components/FormContact.astro";
+---
+
+<section
+  class="relative flex items-center bg-gradient-to-b from-black via-[#1A001D] to-black py-16 md:min-h-screen"
+  style="background-size: cover; background-position: center;"
+>
+  <div class="hidden md:block absolute inset-0 bg-[url('/hero-back.png')] bg-cover bg-center"></div>
+
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <ContentWidth>
+    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-white leading-tight drop-shadow-lg">
+          Seamos socios en <br /> sabor y calidad
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-300 max-w-xl">
+          Zumos de uva seleccionados para quienes saben disfrutar lo natural.
+        </p>
+
+        <a
+          href="https://lavid.life/"
+          target="_blank"
+          class="inline-block px-8 py-4 text-lg font-medium rounded-full bg-gradient-to-r from-[#C84485] to-[#800040] text-white shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >
+          Ver Productos
+        </a>
+      </div>
+
+      <div class="bg-black/80 backdrop-blur-md rounded-2xl shadow-2xl p-8 border border-[#C84485]/40">
+        <h2 class="text-2xl font-serif text-white mb-6">Contáctanos</h2>
+        <FormContact />
+      </div>
+    </div>
+  </ContentWidth>
+</section>
+
+

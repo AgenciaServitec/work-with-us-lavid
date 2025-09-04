@@ -1,0 +1,21 @@
+---
+import ContentWidth from "../components/ContentWidth.astro";
+---
+
+<header class="sticky top-0 z-50 bg-gradient-to-r from-black via-[#1A001D] to-black backdrop-blur-sm border-b border-[#2e003e]/50 shadow-md">
+  <ContentWidth>
+    <div class="flex items-center justify-center md:justify-start py-3">
+      <a href="/" class="flex items-center gap-3 group">
+        <img
+          src="/logo.webp"
+          class="w-12 md:w-16 h-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-lg"
+          alt="Logo de la vid"
+          loading="eager"
+        />
+        <span class="hidden md:block text-2xl font-serif text-white group-hover:text-[#C84485] transition-colors tracking-wide">
+          La Vid
+        </span>
+      </a>
+    </div>
+  </ContentWidth>
+</header>
